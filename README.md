@@ -15,3 +15,5 @@ https://www.figma.com/file/fO9SrIq6PCQSoJ8iqT0A3O/Sample-UI?node-id=1%3A2
 
 # Deadline
 24hrs after you've accepted the invite to this repository.
+
+If you've got any questions, you can drop it in the discussions panel and mention me in it.
