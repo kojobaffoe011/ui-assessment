@@ -10,8 +10,8 @@ https://www.figma.com/file/fO9SrIq6PCQSoJ8iqT0A3O/Sample-UI?node-id=1%3A2
 - No animation needed. Micro interaction animations would be a plus though (still not required).
 
 # Requirements
-- You're free to use either React [Next.js, etc] or Vue [Nuxt.js]
-- You're also free to use any ui library of your choice including; TailwindCSS, Boostrap, etc
+- Framework: Vue [Nuxt.js]
+- UI library: TailwindCSS, Boostrap, or Plain CSS/SCSS
 
 # Deadline
 24hrs after you've accepted the invite to this repository.
