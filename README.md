@@ -4,9 +4,12 @@
 https://www.figma.com/file/fO9SrIq6PCQSoJ8iqT0A3O/Sample-UI?node-id=1%3A2
 
 # Objectives
+- Fork this repository.
+- Create a new branch in your Github username.
 - Build the user interface exaclty as seen in the design file linked above. Alignment, spacing and precision are key.
 - Have a least one product linked to the product description page.
 - No animation needed. Micro interaction animations would be a plus although not required.
+- Create a pull request when completed.
 
 # Requirements
 - Web Framework: React or Vue
