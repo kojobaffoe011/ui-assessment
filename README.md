@@ -15,7 +15,7 @@ Icons and images are included in the assets folder of this repo
 - Create a pull request when completed.
 
 # Requirements
-- Web Framework: React or Vue
+- Web Framework: React, Vue, or Webflow
 - UI library: TailwindCSS, Boostrap, or Plain CSS/SCSS
 
 # Deadline
