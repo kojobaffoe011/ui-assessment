@@ -19,6 +19,6 @@ Icons and images are included in the assets folder of this repo
 - UI library: TailwindCSS, Boostrap, or Plain CSS/SCSS
 
 # Deadline
-48hrs after you've accepted the invite to this repository.
+48hrs after you've accepted the invite to the Figma file.
 
 If you've got any questions, you can drop it in the discussions panel and mention me (@pyplacca) in it.
