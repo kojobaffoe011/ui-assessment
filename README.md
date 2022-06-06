@@ -12,7 +12,6 @@ Icons and images are included in the assets folder of this repo
 - Build the user interface exaclty as seen in the design file linked above. Alignment, spacing and precision are key.
 - Have a least one product linked to the product description page.
 - No animation needed. Micro interaction animations would be a plus although not required.
-- Create a pull request when completed.
 
 # Requirements
 - Web Framework: React, Vue, or Webflow
@@ -22,3 +21,8 @@ Icons and images are included in the assets folder of this repo
 48hrs after you've accepted the invite to the Figma file.
 
 If you've got any questions, you can drop it in the discussions panel and mention me (@pyplacca) in it.
+
+# Submission Instructions
+1. Send an email to notify about your completion for approval.
+2. Once approved, you will receive an email invitation to collaborate via Github.
+3. Accept the invitation and create a pull request for review.
