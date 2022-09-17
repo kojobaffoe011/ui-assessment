@@ -2,6 +2,14 @@
   padding: 40px;
 }
 
+.enquiries {
+  padding: 0px 40px 0px 40px;
+}
+
+.reward-tag {
+  padding: -40px;
+}
+
 .banner-photo {
   height: 100%;
 }
@@ -11,9 +19,52 @@
   width: 100%;
 }
 
+.popular-shirts {
+  padding: 80px;
+}
+
+.card {
+  padding: 16px;
+}
+
+.country-leagues {
+  padding: 80px;
+}
+
+.country-leagues-img > img {
+  width: 100%;
+}
+
+.other-collections {
+  padding: 80px;
+}
+
+.advert {
+  padding: 80px;
+}
+
 @media screen and (max-width: 768px) {
   .landing-banner {
     padding: 0px;
     /* display: none !important; */
+  }
+  .enquiries {
+    padding: 16px;
+  }
+
+  .popular-shirts {
+    padding: 16px;
+  }
+
+  .country-leagues {
+    padding: 16px;
+  }
+
+  .other-collections {
+    padding: 16px;
+  }
+
+  .advert {
+    padding: 16px;
   }
 }
