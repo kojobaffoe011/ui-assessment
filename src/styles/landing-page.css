@@ -1,0 +1,19 @@
+.landing-banner {
+  padding: 40px;
+}
+
+.banner-photo {
+  height: 100%;
+}
+
+.banner > img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-banner {
+    padding: 0px;
+    /* display: none !important; */
+  }
+}

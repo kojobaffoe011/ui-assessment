@@ -1,0 +1,173 @@
+p {
+  margin: 0;
+  font-family: regular;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+#sales-promo {
+  margin: 5px;
+}
+
+.bordered {
+  border: 1px dotted;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.light-gray {
+  color: #eaeaec;
+}
+
+.primary {
+  color: #f9dc38;
+}
+
+.orange {
+  color: #ee503e;
+}
+
+.secondary {
+  color: #111112;
+}
+
+.success {
+  color: #27b03f;
+}
+
+.discount {
+  color: #ee503e;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.discount-alt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-decoration-line: line-through;
+  color: #ee503e;
+}
+
+.title {
+  font-size: 32px;
+  margin: 0;
+}
+
+.dark-gray {
+  color: rgba(255, 255, 255, 0.08);
+}
+
+.gray {
+  color: #111112;
+}
+
+.bg-primary {
+  background-color: hsla(51, 94%, 60%, 1);
+}
+
+.bg-primary-tint {
+  background-color: #fefae1;
+}
+
+.bg-secondary {
+  background-color: #111112;
+}
+
+.bg-success {
+  background-color: #27b03f;
+}
+
+.bg-dark-gray {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-footer {
+  background-color: #f5f5f6;
+}
+
+.regular {
+  font-family: regular;
+}
+
+.bold {
+  font-family: bold;
+}
+
+.light {
+  font-family: light;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.smallest {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.smallest-active {
+  color: #1256db;
+}
+
+.medium {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.large {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.largest {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #111112;
+  opacity: 0.8;
+}
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #111112;
+  opacity: 0.8;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
