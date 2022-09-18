@@ -6,6 +6,17 @@ p {
 h1,
 h2 {
   margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
 }
 
 #sales-promo {
@@ -55,6 +66,9 @@ h2 {
   color: #ee503e;
 }
 
+.auto {
+  margin-top: auto;
+}
 .title {
   font-size: 32px;
   margin: 0;
@@ -115,6 +129,11 @@ h2 {
 
 .smallest {
   font-size: 10px;
+  line-height: 16px;
+}
+
+.too-small {
+  font-size: 8.5px;
   line-height: 16px;
 }
 

@@ -21,17 +21,14 @@ const Button = (props) => {
           style={{
             padding: props.padding || "8px 16px",
             backgroundColor: props.backgroundColor || "initial",
+            backdropFilter: props.backdropFilter || "initial",
           }}
         >
           {children}
         </Flex>
       )}
       {append && (
-        <Flex
-          style={{ padding: "18px", minWidth: "40px" }}
-          jc="center"
-          ai="center"
-        >
+        <Flex style={{ minWidth: "60px" }} jc="center" ai="center">
           {append}
         </Flex>
       )}

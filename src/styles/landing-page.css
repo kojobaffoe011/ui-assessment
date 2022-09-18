@@ -2,6 +2,14 @@
   padding: 40px;
 }
 
+.banner-text {
+  padding: 80px;
+}
+
+.fav {
+  font-size: 40px;
+}
+
 .enquiries {
   padding: 0px 40px 0px 40px;
 }
@@ -46,8 +54,16 @@
 @media screen and (max-width: 768px) {
   .landing-banner {
     padding: 0px;
-    /* display: none !important; */
   }
+
+  .banner-text {
+    padding: 24px;
+  }
+
+  .fav {
+    font-size: 20px;
+  }
+
   .enquiries {
     padding: 16px;
   }
