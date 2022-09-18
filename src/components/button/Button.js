@@ -22,6 +22,7 @@ const Button = (props) => {
             padding: props.padding || "8px 16px",
             backgroundColor: props.backgroundColor || "initial",
             backdropFilter: props.backdropFilter || "initial",
+            border: props.border || "initial",
           }}
         >
           {children}

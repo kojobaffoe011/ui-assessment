@@ -24,6 +24,7 @@ import check from "../assets/icons/svg/check-badge.svg";
 import whatsapp from "../assets/icons/svg/whatsapp.svg";
 import right from "../assets/icons/svg/right1.svg";
 import left from "../assets/icons/svg/left1.svg";
+import bag from "../assets/icons/svg/bag1.svg";
 
 import Grid, { GridItem } from "../components/layout/Grid";
 import Button from "../components/button/Button";
@@ -173,24 +174,107 @@ const Enquiries = () => {
 
 const LandingBanner = () => {
   return (
-    <Flex stack={true} spacing={40} className="landing-banner">
-      <div
+    <Flex stack={true} spacing={40} className=" landing-banner">
+      <Flex
         className=" banner"
+        stack={true}
+        spacing={0}
         style={{
-          backgroundImage: `url(${Background}), linear-gradient(to right, black, white)`,
+          backgroundImage: `url(${Background})`,
           backgroundRepeat: "no-repeat",
           height: "50vh",
           width: "100%",
         }}
       >
-        <div className="banner-text">
-          <h2 className="white fav">
-            Your favorite customized
-            <br />
-            <span className="primary">Club Jerseys.</span>
-          </h2>
-        </div>
-      </div>
+        <Flex stack={true} spacing={60}>
+          <div className="banner-text">
+            <h2 className=" white fav">
+              Your favorite customized
+              <br />
+              <span className="primary">Club Jerseys.</span>
+            </h2>
+          </div>
+          <Flex
+            spacing={60}
+            style={{
+              border: "",
+              paddingLeft: "80px",
+              paddingRight: "80px",
+              paddingTop: "20px",
+              paddingBottom: "20px",
+            }}
+          >
+            <Flex
+              style={{ flexBasis: "80%", border: "" }}
+              stack={true}
+              jc="flex-end"
+            >
+              <Flex spacing={8}>
+                <div
+                  style={{ border: "2px solid #F8D307", width: "80px" }}
+                ></div>
+                <div
+                  style={{
+                    border: "2px solid #F8D307",
+                    opacity: "0.4",
+                    width: "80px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    border: "2px solid #F8D307",
+                    opacity: "0.4",
+                    width: "80px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    border: "2px solid #F8D307",
+                    opacity: "0.4",
+                    width: "80px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    border: "2px solid #F8D307",
+                    opacity: "0.4",
+                    width: "80px",
+                  }}
+                ></div>
+              </Flex>
+            </Flex>
+            <div className="flex-grow ">
+              <Button
+                backgroundColor={"transparent"}
+                padding={12}
+                border={"1px solid white"}
+                append={
+                  <Flex
+                    className="bg-white"
+                    jc="center"
+                    style={{
+                      width: "100%",
+                      height: "85%",
+                      padding: "4px",
+                    }}
+                  >
+                    <Flex
+                      ai="center"
+                      jc="center"
+                      className=""
+                      style={{ width: "100%" }}
+                    >
+                      <img src={bag} />
+                    </Flex>
+                  </Flex>
+                }
+              >
+                <p className="white bold">Shop Now</p>
+              </Button>
+            </div>
+          </Flex>
+        </Flex>
+      </Flex>
     </Flex>
   );
 };
@@ -473,8 +557,9 @@ const OtherCollections = () => {
     <Flex spacing={80} className=" other-collections" stack={true}>
       <h2>OTHER COLLECTIONS</h2>
       <Grid span={12}>
+        {/* <Flex></Flex> */}
         <GridItem
-          className="bordered"
+          className=""
           span={4}
           md={6}
           style={{
@@ -482,36 +567,66 @@ const OtherCollections = () => {
             backgroundSize: "cover",
             height: "30vh",
             backgroundRepeat: "no-repeat",
-            marginTop: "auto",
+            // marginTop: "auto",
           }}
         >
-          <Button
-            backgroundColor={"rgba(17, 17, 18, 0.4"}
-            backdropFilter={"blur(8px)"}
-            padding={"16px"}
-            append={
-              <Flex
-                className="bg-primary"
-                jc="center"
-                style={{
-                  width: "100%",
-                  height: "85%",
-                  padding: "4px",
-                }}
-              >
+          <Flex className="" stack={true} style={{ marginTop: "auto" }}>
+            <Button
+              backgroundColor={"rgba(17, 17, 18, 0.4"}
+              backdropFilter={"blur(8px)"}
+              padding={"16px"}
+              append={
                 <Flex
-                  ai="center"
+                  className="bg-primary"
                   jc="center"
-                  className=""
-                  style={{ width: "100%" }}
+                  style={{
+                    width: "100%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
                 >
-                  <img src={right} />
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={right} />
+                  </Flex>
                 </Flex>
-              </Flex>
-            }
-          >
-            <p className="white bold small">Kids</p>
-          </Button>
+              }
+            >
+              <p className="white bold small">Kids</p>
+            </Button>
+            <Button
+              backgroundColor={"rgba(17, 17, 18, 0.4"}
+              backdropFilter={"blur(8px)"}
+              padding={"16px"}
+              append={
+                <Flex
+                  className="bg-primary"
+                  jc="center"
+                  style={{
+                    width: "100%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
+                >
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={right} />
+                  </Flex>
+                </Flex>
+              }
+            >
+              <p className="white bold small">Kids</p>
+            </Button>
+          </Flex>
+
           <Button
             backgroundColor={"rgba(17, 17, 18, 0.4"}
             backdropFilter={"blur(8px)"}
