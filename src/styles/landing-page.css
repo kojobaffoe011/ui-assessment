@@ -58,6 +58,10 @@
   padding: 80px;
 }
 
+.other-collections-text {
+  font-size: 14px;
+}
+
 .advert {
   padding: 80px;
 }
@@ -97,6 +101,10 @@
 
   .other-collections {
     padding: 16px;
+  }
+
+  .other-collections-text {
+    font-size: 6px;
   }
 
   .advert {

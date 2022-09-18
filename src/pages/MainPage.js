@@ -25,6 +25,9 @@ import whatsapp from "../assets/icons/svg/whatsapp.svg";
 import right from "../assets/icons/svg/right1.svg";
 import left from "../assets/icons/svg/left1.svg";
 import bag from "../assets/icons/svg/bag1.svg";
+import twitter from "../assets/icons/svg/Social Icon/twitter.svg";
+import instagram from "../assets/icons/svg/Social Icon/instagram.svg";
+import facebook from "../assets/icons/svg/Social Icon/facebook.svg";
 
 import Grid, { GridItem } from "../components/layout/Grid";
 import Button from "../components/button/Button";
@@ -180,7 +183,7 @@ const LandingBanner = () => {
         stack={true}
         spacing={0}
         style={{
-          backgroundImage: `url(${Background})`,
+          backgroundImage: `linear-gradient(45deg, black, transparent),url(${Background})`,
           backgroundRepeat: "no-repeat",
           height: "50vh",
           width: "100%",
@@ -730,7 +733,9 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Authentic / Pro Player</p>
+              <p className="white bold other-collections-text">
+                Authentic / Pro Player
+              </p>
             </Button>
           </div>
         </GridItem>
@@ -835,12 +840,10 @@ const Advertisment = () => {
           span={6}
           md={12}
           style={{
-            backgroundImage: `url(${Background14})`,
-            // backgroundImage: `linear-gradient(to right, #111112), url("${Background14}")`,
+            backgroundImage: `linear-gradient(45deg, black, transparent), url(${Background14})`,
             height: "40vh",
             width: "100%",
             position: "relative",
-            // padding: "40px",
           }}
         >
           <Flex stack={true}>
@@ -865,8 +868,7 @@ const Advertisment = () => {
           span={6}
           md={12}
           style={{
-            backgroundImage: `url(${Background15}),linear-gradient(to right, red 100%,blue`,
-            // backgroundImage: `linear-gradient(to right, #111112), url("${Background15}")`,
+            backgroundImage: `linear-gradient(45deg, black, transparent),url(${Background15})`,
             height: "40vh",
             width: "100%",
             position: "relative",
@@ -883,7 +885,47 @@ const Advertisment = () => {
             <p>
               Share your shirts with us with the #CamisetasFutbolSpainnn <br />{" "}
             </p>
-            <p>icon</p>
+            <Flex spacing="8px">
+              <Flex
+                className=" bg-white "
+                style={{ width: "30px", height: "30px", padding: "4px" }}
+              >
+                <Flex
+                  ai="center"
+                  jc="center"
+                  className=""
+                  style={{ width: "100%" }}
+                >
+                  <img src={facebook} className="" />
+                </Flex>
+              </Flex>
+              <Flex
+                className=" bg-white "
+                style={{ width: "30px", height: "30px", padding: "4px" }}
+              >
+                <Flex
+                  ai="center"
+                  jc="center"
+                  className=""
+                  style={{ width: "100%" }}
+                >
+                  <img src={twitter} className="" />
+                </Flex>
+              </Flex>
+              <Flex
+                className=" bg-white "
+                style={{ width: "30px", height: "30px", padding: "4px" }}
+              >
+                <Flex
+                  ai="center"
+                  jc="center"
+                  className=""
+                  style={{ width: "100%" }}
+                >
+                  <img src={instagram} className="" />
+                </Flex>
+              </Flex>
+            </Flex>
           </Flex>
         </GridItem>
       </Grid>
