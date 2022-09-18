@@ -6,6 +6,17 @@
   padding: 80px;
 }
 
+.banner-dashes {
+  width: 80px;
+}
+
+.banner-bottom {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .fav {
   font-size: 40px;
 }
@@ -58,6 +69,14 @@
 
   .banner-text {
     padding: 24px;
+  }
+
+  .banner-bottom {
+    padding: 16px;
+  }
+
+  .banner-dashes {
+    width: 23px;
   }
 
   .fav {

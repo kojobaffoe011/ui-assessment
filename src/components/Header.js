@@ -2,7 +2,9 @@ import React from "react";
 import Button from "./button/Button";
 import Flex from "./layout/Flex";
 import Grid, { GridItem } from "./layout/Grid";
-import { SearchIcon } from "./icon/Icon";
+import search from "../assets/icons/svg/search.svg";
+import cart from "../assets/icons/svg/shopping-cart.svg";
+import user from "../assets/icons/svg/user.svg";
 import "../styles/header.css";
 
 const SalesBanner = () => {
@@ -56,21 +58,39 @@ const SearchBar = () => {
   return (
     <Flex className="  flex-grow">
       <Flex className="flex-grow">
-        <input className="flex-grow" placeholder="What are you looking for?" />
+        <input
+          className="flex-grow "
+          placeholder="What are you looking for?"
+          style={{ height: "50px", border: "none" }}
+        />
       </Flex>
 
       <Flex>
         <Button
+          backgroundColor={"#F9DC38"}
+          padding={0}
           append={
-            <SearchIcon
-              className="secondary"
-              fill="black"
-              height="10px"
-              width="10px"
-            />
+            <Flex
+              className="bg-secondary"
+              jc="center"
+              style={{
+                width: "100%",
+                height: "85%",
+                padding: "4px",
+              }}
+            >
+              <Flex
+                ai="center"
+                jc="center"
+                className=""
+                style={{ width: "100%" }}
+              >
+                <img src={search} />
+              </Flex>
+            </Flex>
           }
         >
-          Search{" "}
+          Search
         </Button>
       </Flex>
     </Flex>
@@ -114,8 +134,23 @@ const AppHeader = () => {
         </Grid>
       </GridItem>
 
-      <GridItem span={1} md={6} className="bg-white">
-        i
+      <GridItem
+        span={1}
+        md={6}
+        className=" bg-white"
+        style={{ position: "relative" }}
+      >
+        <Flex
+          style={{ position: "absolute", bottom: "35%", width: "100%" }}
+          // jc="center"
+        >
+          <div className=" " style={{ flexBasis: "50%", paddingLeft: "20px" }}>
+            <img src={cart} />
+          </div>
+          <div className=" " style={{ flexBasis: "50%", paddingLeft: "20px" }}>
+            <img src={user} />
+          </div>
+        </Flex>
       </GridItem>
     </Grid>
   );

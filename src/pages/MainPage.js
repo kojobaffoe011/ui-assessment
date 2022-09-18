@@ -195,13 +195,10 @@ const LandingBanner = () => {
             </h2>
           </div>
           <Flex
+            className="banner-bottom"
             spacing={60}
             style={{
               border: "",
-              paddingLeft: "80px",
-              paddingRight: "80px",
-              paddingTop: "20px",
-              paddingBottom: "20px",
             }}
           >
             <Flex
@@ -211,34 +208,35 @@ const LandingBanner = () => {
             >
               <Flex spacing={8}>
                 <div
-                  style={{ border: "2px solid #F8D307", width: "80px" }}
+                  className="banner-dashes"
+                  style={{ border: "2px solid #F8D307" }}
                 ></div>
                 <div
+                  className="banner-dashes"
                   style={{
                     border: "2px solid #F8D307",
                     opacity: "0.4",
-                    width: "80px",
                   }}
                 ></div>
                 <div
+                  className="banner-dashes"
                   style={{
                     border: "2px solid #F8D307",
                     opacity: "0.4",
-                    width: "80px",
                   }}
                 ></div>
                 <div
+                  className="banner-dashes"
                   style={{
                     border: "2px solid #F8D307",
                     opacity: "0.4",
-                    width: "80px",
                   }}
                 ></div>
                 <div
+                  className="banner-dashes"
                   style={{
                     border: "2px solid #F8D307",
                     opacity: "0.4",
-                    width: "80px",
                   }}
                 ></div>
               </Flex>
@@ -655,7 +653,7 @@ const OtherCollections = () => {
             <p className="white bold small">Kids</p>
           </Button>
         </GridItem>
-        {/* <GridItem
+        <GridItem
           className=""
           span={4}
           md={6}
@@ -749,7 +747,7 @@ const OtherCollections = () => {
           >
             <p className="white bold small">Kids</p>
           </Button>
-        </GridItem> */}
+        </GridItem>
       </Grid>
     </Flex>
   );
