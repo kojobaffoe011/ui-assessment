@@ -61,7 +61,7 @@ const SearchBar = () => {
         <input
           className="flex-grow "
           placeholder="What are you looking for?"
-          style={{ height: "50px", border: "none" }}
+          style={{ height: "35px", border: "none" }}
         />
       </Flex>
 
@@ -104,7 +104,11 @@ const AppHeader = () => {
 
       <GridItem span={10} md={6}>
         <Grid span={12} gap="0">
-          <GridItem span={2} md={0}>
+          <GridItem
+            span={2}
+            md={0}
+            style={{ borderRight: "1px solid #e5e5e5" }}
+          >
             <Flex
               stack={true}
               style={{ height: "100%" }}
@@ -128,7 +132,7 @@ const AppHeader = () => {
           <GridItem span={0} md={6}>
             <Flex spacing={20} ai="center">
               <p>ham</p>
-              <p>sea</p>
+              <p>search</p>
             </Flex>
           </GridItem>
         </Grid>
@@ -138,13 +142,13 @@ const AppHeader = () => {
         span={1}
         md={6}
         className=" bg-white"
-        style={{ position: "relative" }}
+        style={{ position: "relative", borderLeft: "1px solid #e5e5e5" }}
       >
         <Flex
           style={{ position: "absolute", bottom: "35%", width: "100%" }}
           // jc="center"
         >
-          <div className=" " style={{ flexBasis: "50%", paddingLeft: "20px" }}>
+          <div className="" style={{ flexBasis: "50%", paddingLeft: "20px" }}>
             <img src={cart} />
           </div>
           <div className=" " style={{ flexBasis: "50%", paddingLeft: "20px" }}>

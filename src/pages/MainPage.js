@@ -202,7 +202,8 @@ const LandingBanner = () => {
             }}
           >
             <Flex
-              style={{ flexBasis: "80%", border: "" }}
+              // className=""
+              style={{ flexBasis: "80%" }}
               stack={true}
               jc="flex-end"
             >
@@ -565,93 +566,41 @@ const OtherCollections = () => {
             backgroundSize: "cover",
             height: "30vh",
             backgroundRepeat: "no-repeat",
-            // marginTop: "auto",
+            position: "relative",
           }}
         >
-          <Flex className="" stack={true} style={{ marginTop: "auto" }}>
-            <Button
-              backgroundColor={"rgba(17, 17, 18, 0.4"}
-              backdropFilter={"blur(8px)"}
-              padding={"16px"}
-              append={
-                <Flex
-                  className="bg-primary"
-                  jc="center"
-                  style={{
-                    width: "100%",
-                    height: "85%",
-                    padding: "4px",
-                  }}
-                >
-                  <Flex
-                    ai="center"
-                    jc="center"
-                    className=""
-                    style={{ width: "100%" }}
-                  >
-                    <img src={right} />
-                  </Flex>
-                </Flex>
-              }
-            >
-              <p className="white bold small">Kids</p>
-            </Button>
-            <Button
-              backgroundColor={"rgba(17, 17, 18, 0.4"}
-              backdropFilter={"blur(8px)"}
-              padding={"16px"}
-              append={
-                <Flex
-                  className="bg-primary"
-                  jc="center"
-                  style={{
-                    width: "100%",
-                    height: "85%",
-                    padding: "4px",
-                  }}
-                >
-                  <Flex
-                    ai="center"
-                    jc="center"
-                    className=""
-                    style={{ width: "100%" }}
-                  >
-                    <img src={right} />
-                  </Flex>
-                </Flex>
-              }
-            >
-              <p className="white bold small">Kids</p>
-            </Button>
-          </Flex>
-
-          <Button
-            backgroundColor={"rgba(17, 17, 18, 0.4"}
-            backdropFilter={"blur(8px)"}
-            padding={"16px"}
-            append={
-              <Flex
-                className="bg-primary"
-                jc="center"
-                style={{
-                  width: "100%",
-                  height: "85%",
-                  padding: "4px",
-                }}
-              >
-                <Flex
-                  ai="center"
-                  jc="center"
-                  className=""
-                  style={{ width: "100%" }}
-                >
-                  <img src={right} />
-                </Flex>
-              </Flex>
-            }
+          <div
+            className=""
+            style={{ position: "absolute", bottom: "0", width: "100%" }}
           >
-            <p className="white bold small">Kids</p>
-          </Button>
+            <Button
+              backgroundColor={"rgba(17, 17, 18, 0.4"}
+              backdropFilter={"blur(8px)"}
+              padding={"16px"}
+              append={
+                <Flex
+                  className="bg-primary"
+                  jc="center"
+                  style={{
+                    width: "100%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
+                >
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={right} />
+                  </Flex>
+                </Flex>
+              }
+            >
+              <p className="white bold small">Kids</p>
+            </Button>
+          </div>
         </GridItem>
         <GridItem
           className=""
@@ -661,16 +610,41 @@ const OtherCollections = () => {
             backgroundImage: `url(${Background9})`,
             height: "30vh",
             backgroundRepeat: "no-repeat",
+            position: "relative",
           }}
         >
-          <Button
-            backgroundColor={"rgba(17, 17, 18, 0.4"}
-            backdropFilter={"blur(8px)"}
-            padding={"16px"}
-            append={<div>a</div>}
+          <div
+            className=""
+            style={{ position: "absolute", bottom: "0", width: "100%" }}
           >
-            <p className="white bold small">Larger Sizes</p>
-          </Button>
+            <Button
+              backgroundColor={"rgba(17, 17, 18, 0.4"}
+              backdropFilter={"blur(8px)"}
+              padding={"16px"}
+              append={
+                <Flex
+                  className="bg-primary"
+                  jc="center"
+                  style={{
+                    width: "100%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
+                >
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={right} />
+                  </Flex>
+                </Flex>
+              }
+            >
+              <p className="white bold small">Large sizes</p>
+            </Button>
+          </div>
         </GridItem>
         <GridItem
           className=""
@@ -680,16 +654,41 @@ const OtherCollections = () => {
             backgroundImage: `url(${Background10})`,
             height: "30vh",
             backgroundRepeat: "no-repeat",
+            position: "relative",
           }}
         >
-          <Button
-            backgroundColor={"rgba(17, 17, 18, 0.4"}
-            backdropFilter={"blur(8px)"}
-            padding={"16px"}
-            append={<div>a</div>}
+          <div
+            className=""
+            style={{ position: "absolute", bottom: "0", width: "100%" }}
           >
-            <p className="white bold small">Goalkeeper</p>
-          </Button>
+            <Button
+              backgroundColor={"rgba(17, 17, 18, 0.4"}
+              backdropFilter={"blur(8px)"}
+              padding={"16px"}
+              append={
+                <Flex
+                  className="bg-primary"
+                  jc="center"
+                  style={{
+                    width: "100%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
+                >
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={right} />
+                  </Flex>
+                </Flex>
+              }
+            >
+              <p className="white bold small">Goalkeeper</p>
+            </Button>
+          </div>
         </GridItem>
         <GridItem
           className=""
@@ -699,16 +698,41 @@ const OtherCollections = () => {
             backgroundImage: `url(${Background11})`,
             height: "30vh",
             backgroundRepeat: "no-repeat",
+            position: "relative",
           }}
         >
-          <Button
-            backgroundColor={"rgba(17, 17, 18, 0.4"}
-            backdropFilter={"blur(8px)"}
-            padding={"16px"}
-            append={<div>a</div>}
+          <div
+            className=""
+            style={{ position: "absolute", bottom: "0", width: "100%" }}
           >
-            <p className="white bold small">Authentic/Pro Player</p>
-          </Button>
+            <Button
+              backgroundColor={"rgba(17, 17, 18, 0.4"}
+              backdropFilter={"blur(8px)"}
+              padding={"16px"}
+              append={
+                <Flex
+                  className="bg-primary"
+                  jc="center"
+                  style={{
+                    width: "100%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
+                >
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={right} />
+                  </Flex>
+                </Flex>
+              }
+            >
+              <p className="white bold small">Authentic / Pro Player</p>
+            </Button>
+          </div>
         </GridItem>
         <GridItem
           className=""
@@ -718,16 +742,41 @@ const OtherCollections = () => {
             backgroundImage: `url(${Background12})`,
             height: "30vh",
             backgroundRepeat: "no-repeat",
+            position: "relative",
           }}
         >
-          <Button
-            backgroundColor={"rgba(17, 17, 18, 0.4"}
-            backdropFilter={"blur(8px)"}
-            padding={"16px"}
-            append={<div>a</div>}
+          <div
+            className=""
+            style={{ position: "absolute", bottom: "0", width: "100%" }}
           >
-            <p className="white bold small">Shorts</p>
-          </Button>
+            <Button
+              backgroundColor={"rgba(17, 17, 18, 0.4"}
+              backdropFilter={"blur(8px)"}
+              padding={"16px"}
+              append={
+                <Flex
+                  className="bg-primary"
+                  jc="center"
+                  style={{
+                    width: "100%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
+                >
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={right} />
+                  </Flex>
+                </Flex>
+              }
+            >
+              <p className="white bold small">Shorts</p>
+            </Button>
+          </div>
         </GridItem>
         <GridItem
           className=""
@@ -737,16 +786,41 @@ const OtherCollections = () => {
             backgroundImage: `url(${Background13})`,
             height: "30vh",
             backgroundRepeat: "no-repeat",
+            position: "relative",
           }}
         >
-          <Button
-            backgroundColor={"rgba(17, 17, 18, 0.4"}
-            backdropFilter={"blur(8px)"}
-            padding={"16px"}
-            append={<div>a</div>}
+          <div
+            className=""
+            style={{ position: "absolute", bottom: "0", width: "100%" }}
           >
-            <p className="white bold small">Kids</p>
-          </Button>
+            <Button
+              backgroundColor={"rgba(17, 17, 18, 0.4"}
+              backdropFilter={"blur(8px)"}
+              padding={"16px"}
+              append={
+                <Flex
+                  className="bg-primary"
+                  jc="center"
+                  style={{
+                    width: "100%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
+                >
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={right} />
+                  </Flex>
+                </Flex>
+              }
+            >
+              <p className="white bold small">Socks</p>
+            </Button>
+          </div>
         </GridItem>
       </Grid>
     </Flex>
