@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/landing-page.css";
 import Flex from "../components/layout/Flex";
+// impo;
 // import Tag from "../components/others/Tag";
 import Background from "../assets/images/hero.jpg";
 import Background1 from "../assets/images/reward-tag.svg";
@@ -28,9 +29,9 @@ import bag from "../assets/icons/svg/bag1.svg";
 import twitter from "../assets/icons/svg/Social Icon/twitter.svg";
 import instagram from "../assets/icons/svg/Social Icon/instagram.svg";
 import facebook from "../assets/icons/svg/Social Icon/facebook.svg";
-
 import Grid, { GridItem } from "../components/layout/Grid";
 import Button from "../components/button/Button";
+import { Link } from "react-router-dom";
 
 const RewardTag = () => {
   return (
@@ -288,6 +289,7 @@ const PopularShirts = () => {
         <h2 style={{ flexBasis: "90%" }}>MOST POPULAR T-SHIRTS</h2>
         <Flex className="flex-grow " jc="flex-end" spacing={8}>
           <Flex
+            className=""
             jc="center"
             style={{
               width: "30px",
@@ -306,6 +308,7 @@ const PopularShirts = () => {
             </Flex>
           </Flex>
           <Flex
+            className=""
             jc="center"
             style={{
               width: "30px",
@@ -325,178 +328,196 @@ const PopularShirts = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex spacing={32} className="" style={{ overflowX: "scroll" }}>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+      <Flex spacing={32} className="bordered" style={{ overflowX: "scroll" }}>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
-        <Flex spacing={32} className="" style={{ width: "100%" }}>
-          <Flex stack={true} className="">
-            <img src={Background2} />
-            <Flex
-              stack={true}
-              className="card"
-              spacing={16}
-              style={{ border: "2px solid #EAEAEC" }}
-            >
-              <p>Manchester United 21-22</p>
-              <Flex spacing={8}>
-                <p className="bold">€30.00</p>
-                <Flex className="" ai="center">
-                  <p className="discount">€89.95</p>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <img src={Background2} />
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
           </Flex>
-        </Flex>
+        </Link>
       </Flex>
     </Flex>
   );
