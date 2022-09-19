@@ -328,9 +328,9 @@ const PopularShirts = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex spacing={32} className="bordered" style={{ overflowX: "scroll" }}>
+      <Flex spacing={32} className="" style={{ overflowX: "scroll" }}>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
@@ -351,7 +351,7 @@ const PopularShirts = () => {
           </Flex>
         </Link>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
@@ -372,7 +372,7 @@ const PopularShirts = () => {
           </Flex>
         </Link>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
@@ -393,7 +393,7 @@ const PopularShirts = () => {
           </Flex>
         </Link>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
@@ -414,7 +414,7 @@ const PopularShirts = () => {
           </Flex>
         </Link>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
@@ -435,7 +435,7 @@ const PopularShirts = () => {
           </Flex>
         </Link>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
@@ -456,7 +456,7 @@ const PopularShirts = () => {
           </Flex>
         </Link>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
@@ -477,7 +477,7 @@ const PopularShirts = () => {
           </Flex>
         </Link>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
@@ -498,7 +498,7 @@ const PopularShirts = () => {
           </Flex>
         </Link>
         <Link to="/product" style={{ textDecoration: "none" }}>
-          <Flex spacing={32} className="bordered" style={{ width: "100%" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <img src={Background2} />
               <Flex
