@@ -580,7 +580,6 @@ const OtherCollections = () => {
     <Flex spacing={80} className=" other-collections" stack={true}>
       <h2>OTHER COLLECTIONS</h2>
       <Grid span={12}>
-        {/* <Flex></Flex> */}
         <GridItem
           className=""
           span={4}

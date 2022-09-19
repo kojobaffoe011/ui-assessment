@@ -7,6 +7,7 @@ import Grid, { GridItem } from "../components/layout/Grid";
 import Background from "../assets/images/product-large.svg";
 import Background1 from "../assets/images/product-small.svg";
 import Background2 from "../assets/images/reward-tag.svg";
+import cart from "../assets/icons/svg/shopping-cart-alt.svg";
 import Button from "../components/button/Button";
 import Tag from "../components/others/Tag";
 import Input from "../components/others/Input";
@@ -147,7 +148,26 @@ const ProductForm = () => {
       <Button
         padding="18px 12px"
         backgroundColor="#F9DC38"
-        append={<div>a</div>}
+        append={
+          <Flex
+            className="bg-secondary"
+            jc="center"
+            style={{
+              width: "100%",
+              height: "85%",
+              padding: "4px",
+            }}
+          >
+            <Flex
+              ai="center"
+              jc="center"
+              className=""
+              style={{ width: "100%" }}
+            >
+              <img src={cart} />
+            </Flex>
+          </Flex>
+        }
       >
         <p className="medium bold">Add to Cart</p>
       </Button>
