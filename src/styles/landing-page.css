@@ -50,10 +50,16 @@
   padding: 80px;
 }
 
-.country-leagues-img > img {
-  width: 100%;
+.country-league-row {
+  /* margin-top: auto; */
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
+.country-league-column {
+  width: 100%;
+}
 .other-collections {
   padding: 80px;
 }
@@ -97,6 +103,13 @@
 
   .country-leagues {
     padding: 16px;
+  }
+
+  .country-league-img {
+    /* margin-top: auto; */
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .other-collections {

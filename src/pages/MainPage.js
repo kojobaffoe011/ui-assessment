@@ -529,9 +529,9 @@ const CountryLeagues = () => {
       <div className="">
         <h2>COUNTRY LEAGUES</h2>
       </div>
-      <Flex className="" spacing={16}>
+      <Flex className="country-league-img" spacing={16}>
         <Flex stack={true} spacing={16} style={{ flexBasis: "20%" }}>
-          <div>
+          <div className="country-league-column">
             <img src={Background3} style={{ width: "100%" }} />
           </div>
           <div>

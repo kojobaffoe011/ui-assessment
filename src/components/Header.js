@@ -3,7 +3,9 @@ import Button from "./button/Button";
 import Flex from "./layout/Flex";
 import Grid, { GridItem } from "./layout/Grid";
 import search from "../assets/icons/svg/search.svg";
+import search1 from "../assets/icons/svg/search-alt.svg";
 import cart from "../assets/icons/svg/shopping-cart.svg";
+import ham from "../assets/icons/svg/ham.svg";
 import user from "../assets/icons/svg/user.svg";
 import "../styles/header.css";
 
@@ -130,9 +132,19 @@ const AppHeader = () => {
           </GridItem>
 
           <GridItem span={0} md={6}>
-            <Flex spacing={20} ai="center">
-              <p>ham</p>
-              <p>search</p>
+            <Flex
+              spacing={32}
+              ai="center"
+              // stack={true}
+              className=""
+              style={{ height: "40px", paddingLeft: "16px" }}
+            >
+              <div>
+                <img src={ham} />
+              </div>
+              <div>
+                <img src={search1} />
+              </div>
             </Flex>
           </GridItem>
         </Grid>
@@ -145,8 +157,11 @@ const AppHeader = () => {
         style={{ position: "relative", borderLeft: "1px solid #e5e5e5" }}
       >
         <Flex
-          style={{ position: "absolute", bottom: "35%", width: "100%" }}
+          className=""
+          style={{ position: "absolute", bottom: "20%", width: "100%" }}
           // jc="center"
+          jc="flex-end"
+          spacing={30}
         >
           <div className="" style={{ flexBasis: "50%", paddingLeft: "20px" }}>
             <img src={cart} />
