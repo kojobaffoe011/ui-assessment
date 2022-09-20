@@ -525,6 +525,7 @@ const OtherCollections = () => {
           md={6}
           style={{
             backgroundImage: `url(${Background9})`,
+            backgroundSize: "cover",
             height: "30vh",
             backgroundRepeat: "no-repeat",
             position: "relative",
@@ -559,7 +560,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Large sizes</p>
+              <p className="white bold small">Larger Sizes</p>
             </Button>
           </div>
         </GridItem>
@@ -569,6 +570,7 @@ const OtherCollections = () => {
           md={6}
           style={{
             backgroundImage: `url(${Background10})`,
+            backgroundSize: "cover",
             height: "30vh",
             backgroundRepeat: "no-repeat",
             position: "relative",
@@ -613,6 +615,7 @@ const OtherCollections = () => {
           md={6}
           style={{
             backgroundImage: `url(${Background11})`,
+            backgroundSize: "cover",
             height: "30vh",
             backgroundRepeat: "no-repeat",
             position: "relative",
@@ -647,9 +650,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold other-collections-text">
-                Authentic / Pro Player
-              </p>
+              <p className="white bold small">Authentic/Pro Player</p>
             </Button>
           </div>
         </GridItem>
@@ -659,6 +660,7 @@ const OtherCollections = () => {
           md={6}
           style={{
             backgroundImage: `url(${Background12})`,
+            backgroundSize: "cover",
             height: "30vh",
             backgroundRepeat: "no-repeat",
             position: "relative",
@@ -703,6 +705,7 @@ const OtherCollections = () => {
           md={6}
           style={{
             backgroundImage: `url(${Background13})`,
+            backgroundSize: "cover",
             height: "30vh",
             backgroundRepeat: "no-repeat",
             position: "relative",
