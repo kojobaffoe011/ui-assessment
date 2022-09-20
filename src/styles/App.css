@@ -35,6 +35,11 @@ h3 {
   color: #ffffff;
 }
 
+.bg-white-alt {
+  background-color: #ffffff;
+  opacity: 0.16;
+}
+
 .light-gray {
   color: #eaeaec;
 }

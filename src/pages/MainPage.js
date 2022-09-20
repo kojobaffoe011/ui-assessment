@@ -176,112 +176,6 @@ const Enquiries = () => {
   );
 };
 
-const LandingBanner = () => {
-  return (
-    <Flex stack={true} spacing={40} className=" landing-banner">
-      <Flex
-        className=" banner"
-        stack={true}
-        spacing={0}
-        style={{
-          backgroundImage: `linear-gradient(45deg, black, transparent),url(${Background})`,
-          backgroundRepeat: "no-repeat",
-          height: "50vh",
-          width: "100%",
-        }}
-      >
-        <Flex stack={true} spacing={60}>
-          <div className="banner-text">
-            <h2 className=" white fav">
-              Your favorite customized
-              <br />
-              <span className="primary">Club Jerseys.</span>
-            </h2>
-          </div>
-          <Flex
-            className="banner-bottom"
-            spacing={60}
-            style={{
-              border: "",
-            }}
-          >
-            <Flex
-              // className=""
-              style={{ flexBasis: "80%" }}
-              stack={true}
-              jc="flex-end"
-            >
-              <Flex spacing={8}>
-                <div
-                  className="banner-dashes"
-                  style={{ border: "2px solid #F8D307" }}
-                ></div>
-                <div
-                  className="banner-dashes"
-                  style={{
-                    border: "2px solid #F8D307",
-                    opacity: "0.4",
-                  }}
-                ></div>
-                <div
-                  className="banner-dashes"
-                  style={{
-                    border: "2px solid #F8D307",
-                    opacity: "0.4",
-                  }}
-                ></div>
-                <div
-                  className="banner-dashes"
-                  style={{
-                    border: "2px solid #F8D307",
-                    opacity: "0.4",
-                  }}
-                ></div>
-                <div
-                  className="banner-dashes"
-                  style={{
-                    border: "2px solid #F8D307",
-                    opacity: "0.4",
-                  }}
-                ></div>
-              </Flex>
-            </Flex>
-            <div className="flex-grow ">
-              <Button
-                backgroundColor={"transparent"}
-                padding={12}
-                border={"1px solid white"}
-                append={
-                  <Flex
-                    className="bg-white"
-                    jc="center"
-                    style={{
-                      width: "100%",
-                      height: "85%",
-                      padding: "4px",
-                    }}
-                  >
-                    <Flex
-                      ai="center"
-                      jc="center"
-                      className=""
-                      style={{ width: "100%" }}
-                    >
-                      <img src={bag} />
-                    </Flex>
-                  </Flex>
-                }
-              >
-                <p className="white bold">Shop Now</p>
-              </Button>
-            </div>
-          </Flex>
-        </Flex>
-      </Flex>
-    </Flex>
-  );
-};
-
 const PopularShirts = () => {
   return (
     <Flex className=" popular-shirts" spacing={80} stack={true}>
@@ -949,6 +843,76 @@ const Advertisment = () => {
           </Flex>
         </GridItem>
       </Grid>
+    </Flex>
+  );
+};
+
+const LandingBanner = () => {
+  return (
+    <Flex
+      stack={true}
+      // style={{ border: "3px solid red" }}
+      className="landing-banner"
+    >
+      <Flex
+        stack={true}
+        spacing={105}
+        className="banner-background"
+        style={{
+          backgroundImage: `linear-gradient(45deg, black, transparent),url(${Background})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          minHeight: "30vh",
+          maxWidth: "100%",
+          // border: "2px solid green",
+        }}
+      >
+        <div className="">
+          <h2 className="white banner-text">
+            Your favorite customized
+            <br /> <span className="primary">Club Jerseys.</span>
+          </h2>
+        </div>
+        <Flex className="">
+          <Flex className="flex-grow" style={{ marginTop: "auto" }} spacing={4}>
+            <div className="dash bg-primary"></div>
+            <div className="dash bg-white-alt"></div>
+            <div className="dash bg-white-alt"></div>
+            <div className="dash bg-white-alt"></div>
+            <div className="dash bg-white-alt"></div>
+          </Flex>
+          <Flex style={{ flexBasis: "12%" }} jc="flex-end">
+            <Button
+              backgroundColor={"transparent"}
+              border="1px solid white"
+              append={
+                <Flex
+                  className="bg-white"
+                  jc="center"
+                  style={{
+                    width: "90%",
+                    height: "85%",
+                    padding: "4px",
+                  }}
+                >
+                  <Flex
+                    ai="center"
+                    jc="center"
+                    className=""
+                    style={{ width: "100%" }}
+                  >
+                    <img src={bag} />
+                  </Flex>
+                </Flex>
+              }
+            >
+              <p className=" bold white" style={{ fontSize: "9px" }}>
+                Shop Now
+              </p>
+            </Button>
+          </Flex>
+        </Flex>
+      </Flex>
     </Flex>
   );
 };

@@ -2,40 +2,24 @@
   padding: 40px;
 }
 
+.banner-background {
+  padding: 80px 40px 40px 80px;
+}
+
 .banner-text {
-  padding: 80px;
-}
-
-.banner-dashes {
-  width: 80px;
-}
-
-.banner-bottom {
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.fav {
   font-size: 40px;
 }
 
+.dash {
+  width: 80px;
+  height: 4px;
+}
 .enquiries {
   padding: 0px 40px 0px 40px;
 }
 
 .reward-tag {
   padding: -40px;
-}
-
-.banner-photo {
-  height: 100%;
-}
-
-.banner > img {
-  height: 100%;
-  width: 100%;
 }
 
 .popular-shirts {
@@ -50,12 +34,12 @@
   padding: 80px;
 }
 
-.country-league-row {
-  /* margin-top: auto; */
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(2, 1fr);
-}
+/* .country-league-row { */
+/* margin-top: auto; */
+/* display: grid; */
+/* gap: 16px; */
+/* grid-template-columns: repeat(2, 1fr); */
+/* } */
 
 .country-league-column {
   width: 100%;
@@ -77,16 +61,21 @@
     padding: 0px;
   }
 
+  .banner-background {
+    padding: 16px;
+  }
+
+  .dash {
+    width: 20px;
+    height: 4px;
+  }
+
   .banner-text {
-    padding: 24px;
+    font-size: 20px;
   }
 
   .banner-bottom {
     padding: 16px;
-  }
-
-  .banner-dashes {
-    width: 23px;
   }
 
   .fav {
