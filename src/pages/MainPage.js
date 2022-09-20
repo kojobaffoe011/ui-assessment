@@ -758,6 +758,8 @@ const Advertisment = () => {
           md={12}
           style={{
             backgroundImage: `linear-gradient(45deg, black, transparent), url(${Background14})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
             height: "40vh",
             width: "100%",
             position: "relative",
@@ -786,6 +788,8 @@ const Advertisment = () => {
           md={12}
           style={{
             backgroundImage: `linear-gradient(45deg, black, transparent),url(${Background15})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
             height: "40vh",
             width: "100%",
             position: "relative",
