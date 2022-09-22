@@ -91,6 +91,9 @@ h3 {
   color: #111112;
 }
 
+.gray-inactive {
+}
+
 .bg-primary {
   background-color: hsla(51, 94%, 60%, 1);
 }

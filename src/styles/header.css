@@ -6,8 +6,21 @@
   border-style: solid;
 }
 
+.cart {
+  display: grid;
+  place-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .category-header {
     display: none !important;
   }
+
+  /* .cart {
+    padding-left: 30px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-right: 0px;
+  } */
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../styles/landing-page.css";
 import Flex from "../components/layout/Flex";
 // impo;
@@ -179,11 +179,11 @@ const Enquiries = () => {
 const PopularShirts = () => {
   return (
     <Flex className=" popular-shirts" spacing={80} stack={true}>
-      <Flex className="">
+      <Flex className="bordered">
         <h2 style={{ flexBasis: "90%" }}>MOST POPULAR T-SHIRTS</h2>
-        <Flex className="flex-grow " jc="flex-end" spacing={8}>
+        <Flex className="flex-grow  bordered" jc="flex-end" spacing={8}>
           <Flex
-            className=""
+            className="bordered"
             jc="center"
             style={{
               width: "30px",
@@ -195,14 +195,14 @@ const PopularShirts = () => {
             <Flex
               ai="center"
               jc="center"
-              className=""
+              className="bordered"
               style={{ width: "100%" }}
             >
               <img src={left} />
             </Flex>
           </Flex>
           <Flex
-            className=""
+            className="bordered"
             jc="center"
             style={{
               width: "30px",
