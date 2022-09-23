@@ -7,7 +7,7 @@ const Button = (props) => {
   return (
     <Flex
       style={{
-        width: "100%",
+        width: "100%" || props.width,
         margin: props.margin || "initial",
         border: props.border || "initial",
       }}

@@ -104,9 +104,17 @@ const ProductDetails = () => {
             </h2>
           </div>
 
-          <Flex spacing={78}>
-            <Flex className="product-info " jc="space-between" ai="center">
-              <Flex ai="center" spacing={16}>
+          <Flex
+            className=""
+            // style={{ position: "relative" }}
+          >
+            <Flex
+              className="product-info flex-grow "
+              jc="space-between"
+              ai="center"
+              // style={{ flexBasis: "80%" }}
+            >
+              <Flex ai="center" spacing={16} className="">
                 <h1 className="product-price bold" style={{ fontSize: "40px" }}>
                   €30.00
                 </h1>
@@ -115,13 +123,12 @@ const ProductDetails = () => {
 
                 <Tag text="Save 67%" />
               </Flex>
-              <Flex ai="center"></Flex>
             </Flex>
-            <Flex className=" flex-grow" jc="flex-end">
-              <Button border={"1px solid #e5e5e5"}>
-                <Flex className="" spacing={4}>
+            <Flex ai="center" className="" style={{ flexBasis: "20%" }}>
+              <Button border={"1px solid #e5e5e5"} padding={"8px 12px"}>
+                <Flex className=" flex-grow" spacing={4} jc="center">
                   <img src={heart} />
-                  <p>Add to favorites</p>
+                  <p style={{ fontSize: "8px" }}>Add to favorites</p>
                 </Flex>
               </Button>
             </Flex>
@@ -162,7 +169,7 @@ const ProductFormPart = (props) => {
 
 const ProductForm = () => {
   return (
-    <Flex stack={true} spacing={16} className="product-form ">
+    <Flex stack={true} spacing={16} className="product-form bordered ">
       <Flex stack={true} spacing={40}>
         <Flex stack={true} spacing={16}>
           <ProductFormPart label={"Size"}>
@@ -200,33 +207,34 @@ const ProductForm = () => {
             </Flex>
           </ProductFormPart>
         </Flex>
-        <Button
-          padding="18px 12px"
-          backgroundColor="#F9DC38"
-          append={
-            <Flex
-              className="bg-secondary"
-              jc="center"
-              style={{
-                width: "100%",
-                height: "85%",
-                padding: "4px",
-              }}
-            >
-              <Flex
-                ai="center"
-                jc="center"
-                className=""
-                style={{ width: "100%" }}
-              >
-                <img src={cart} />
-              </Flex>
-            </Flex>
-          }
-        >
-          <p className="medium bold">Add to Cart</p>
-        </Button>
       </Flex>
+      <Button
+        marginTop={"auto"}
+        padding="18px 12px"
+        backgroundColor="#F9DC38"
+        append={
+          <Flex
+            className="bg-secondary"
+            jc="center"
+            style={{
+              width: "100%",
+              height: "85%",
+              padding: "4px",
+            }}
+          >
+            <Flex
+              ai="center"
+              jc="center"
+              className=""
+              style={{ width: "100%" }}
+            >
+              <img src={cart} />
+            </Flex>
+          </Flex>
+        }
+      >
+        <p className="medium bold">Add to Cart</p>
+      </Button>
     </Flex>
   );
 };
@@ -247,10 +255,15 @@ const ProductPage = () => {
           </p>
         </div>
 
-        <div span={12} className="product-preview-grid" gap="80px">
+        <div span={12} className="product-preview-grid">
           <ProductGallery />
 
-          <Flex stack={true} style={{ height: "100%" }} spacing={20}>
+          <Flex
+            stack={true}
+            style={{ height: "100%" }}
+            spacing={20}
+            className="bordered"
+          >
             <ProductDetails />
             <ProductForm />
           </Flex>

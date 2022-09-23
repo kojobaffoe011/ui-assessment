@@ -74,7 +74,7 @@ const Enquiry = (props) => {
 const Enquiries = () => {
   return (
     <Grid span={12} gap="8px" className="enquiries ">
-      <Enquiry image={truck} title="Secure Shipping" subtext="on all orders<" />
+      <Enquiry image={truck} title="Secure Shipping" subtext="on all orders" />
       <Enquiry image={phone} title="Telephone" subtext="+1 23 456 7890" />
       <Enquiry
         image={whatsapp}
