@@ -179,11 +179,11 @@ const Enquiries = () => {
 const PopularShirts = () => {
   return (
     <Flex className=" popular-shirts" spacing={80} stack={true}>
-      <Flex className="bordered">
+      <Flex className="">
         <h2 style={{ flexBasis: "90%" }}>MOST POPULAR T-SHIRTS</h2>
-        <Flex className="flex-grow  bordered" jc="flex-end" spacing={8}>
+        <Flex className="flex-grow  " jc="flex-end" spacing={8}>
           <Flex
-            className="bordered"
+            className=""
             jc="center"
             style={{
               width: "30px",
@@ -195,14 +195,14 @@ const PopularShirts = () => {
             <Flex
               ai="center"
               jc="center"
-              className="bordered"
+              className=""
               style={{ width: "100%" }}
             >
               <img src={left} />
             </Flex>
           </Flex>
           <Flex
-            className="bordered"
+            className=""
             jc="center"
             style={{
               width: "30px",
@@ -863,7 +863,6 @@ const LandingBanner = () => {
     >
       <Flex
         stack={true}
-        spacing={105}
         className="banner-background"
         style={{
           backgroundImage: `linear-gradient(45deg, black, transparent),url(${Background})`,
@@ -871,7 +870,6 @@ const LandingBanner = () => {
           backgroundSize: "cover",
           minHeight: "30vh",
           maxWidth: "100%",
-          // border: "2px solid green",
         }}
       >
         <div className="">
@@ -880,7 +878,7 @@ const LandingBanner = () => {
             <br /> <span className="primary">Club Jerseys.</span>
           </h2>
         </div>
-        <Flex className="">
+        <Flex style={{ marginTop: "auto" }}>
           <Flex className="flex-grow" style={{ marginTop: "auto" }} spacing={4}>
             <div className="dash bg-primary"></div>
             <div className="dash bg-white-alt"></div>

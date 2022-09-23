@@ -23,7 +23,7 @@
   width: 100%;
 }
 .product-preview {
-  padding: 0px 140px;
+  padding: 0px 120px;
 }
 
 .product-gallery {
@@ -44,6 +44,7 @@
 
 .small-image-column > img {
   width: 100%;
+  height: 100%;
 }
 
 .faded {
