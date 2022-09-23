@@ -26,9 +26,9 @@
   padding: 0px 120px;
 }
 
-.product-gallery {
+/* .product-gallery {
   height: 100%;
-}
+} */
 
 .selected-img > img {
   width: 100%;
@@ -51,9 +51,11 @@
   opacity: 0.4;
 }
 
-/* .product-preview-grid-child {
-  border: 1px solid red;
-} */
+.product-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
 
 .product-details {
   height: 100%;
@@ -78,6 +80,11 @@
 
   .map-text {
     font-size: 8px;
+  }
+
+  .product-preview-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 
   .product-map {

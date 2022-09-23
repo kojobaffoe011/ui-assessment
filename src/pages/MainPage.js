@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "../styles/landing-page.css";
 import Flex from "../components/layout/Flex";
-// impo;
 // import Tag from "../components/others/Tag";
 import Background from "../assets/images/hero.jpg";
 import Background1 from "../assets/images/reward-tag.svg";
@@ -32,6 +31,7 @@ import facebook from "../assets/icons/svg/Social Icon/facebook.svg";
 import Grid, { GridItem } from "../components/layout/Grid";
 import Button from "../components/button/Button";
 import { Link } from "react-router-dom";
+import Tag from "../components/others/Tag";
 
 const RewardTag = () => {
   return (
@@ -47,131 +47,45 @@ const RewardTag = () => {
   );
 };
 
+const Enquiry = (props) => {
+  const { title, subtext, image } = props;
+
+  return (
+    <GridItem span={3} md={6} className="enquiry bg-primary-tint">
+      <Flex stack spacing={5}>
+        <Flex className=" bg-primary enquiry-icon">
+          <Flex ai="center" jc="center" className="" style={{ width: "100%" }}>
+            <img src={image} className="" />
+          </Flex>
+        </Flex>
+        <Flex stack={true} spacing={4}>
+          <div className="">
+            <p className="enquiry-text bold">{title}</p>
+          </div>
+          <div className="">
+            <p className="enquiry-desc ">{subtext}</p>
+          </div>
+        </Flex>
+      </Flex>
+    </GridItem>
+  );
+};
+
 const Enquiries = () => {
   return (
-    <Grid span={12} spacing={16} className="enquiries ">
-      <GridItem className="" span={3} md={6}>
-        <Flex
-          spacing={12}
-          stack={true}
-          style={{ padding: "32px" }}
-          className="bg-primary-tint"
-        >
-          <Flex
-            className=" bg-primary"
-            style={{ width: "30px", height: "30px", padding: "4px" }}
-          >
-            <Flex
-              ai="center"
-              jc="center"
-              className=""
-              style={{ width: "100%" }}
-            >
-              <img src={truck} className="" />
-            </Flex>
-          </Flex>
-          <Flex stack={true} spacing={4}>
-            <div className="">
-              <p className="small bold">Secure Shipping</p>
-            </div>
-            <div className="">
-              <p className="smallest ">on all orders</p>
-            </div>
-          </Flex>
-        </Flex>
-      </GridItem>
-      <GridItem className="" span={3} md={6}>
-        <Flex
-          spacing={12}
-          stack={true}
-          style={{ padding: "32px" }}
-          className="bg-primary-tint"
-        >
-          <Flex
-            className=" bg-primary"
-            style={{ width: "30px", height: "30px", padding: "4px" }}
-          >
-            <Flex
-              ai="center"
-              jc="center"
-              className=""
-              style={{ width: "100%" }}
-            >
-              <img src={phone} className="" />
-            </Flex>
-          </Flex>
-          <Flex stack={true} spacing={4}>
-            <div className="">
-              <p className="small bold">Telephone</p>
-            </div>
-            <div className="">
-              <p className="smallest ">+1 23 456 7890</p>
-            </div>
-          </Flex>
-        </Flex>
-      </GridItem>
-      <GridItem className="" span={3} md={6}>
-        <Flex
-          spacing={12}
-          stack={true}
-          style={{ padding: "32px" }}
-          className="bg-primary-tint"
-        >
-          <Flex
-            className=" bg-primary"
-            style={{ width: "30px", height: "30px", padding: "4px" }}
-          >
-            <Flex
-              ai="center"
-              jc="center"
-              className=""
-              style={{ width: "100%" }}
-            >
-              <img src={whatsapp} className="" />
-            </Flex>
-          </Flex>
-          <Flex stack={true} spacing={4}>
-            <div className="">
-              <p className="small bold">Chat WhatsApp</p>
-            </div>
-            <div className="">
-              <p className="too-small ">
-                Mon – Fri: 9:00 – 21:00 • Sat – Sun: 9:00 – 17:00
-              </p>
-            </div>
-          </Flex>
-        </Flex>
-      </GridItem>
-      <GridItem className="" span={3} md={6}>
-        <Flex
-          spacing={12}
-          stack={true}
-          style={{ padding: "32px" }}
-          className="bg-primary-tint"
-        >
-          <Flex
-            className=" bg-primary"
-            style={{ width: "30px", height: "30px", padding: "4px" }}
-          >
-            <Flex
-              ai="center"
-              jc="center"
-              className=""
-              style={{ width: "100%" }}
-            >
-              <img src={check} className="" />
-            </Flex>
-          </Flex>
-          <Flex stack={true} spacing={4}>
-            <div className="">
-              <p className="small bold">Quality Guarantee</p>
-            </div>
-            <div className="">
-              <p className="smallest ">Verified Purchase Reviews</p>
-            </div>
-          </Flex>
-        </Flex>
-      </GridItem>
+    <Grid span={12} gap="8px" className="enquiries ">
+      <Enquiry image={truck} title="Secure Shipping" subtext="on all orders<" />
+      <Enquiry image={phone} title="Telephone" subtext="+1 23 456 7890" />
+      <Enquiry
+        image={whatsapp}
+        title="Chat Whatsapp"
+        subtext="Mon – Fri: 9:00 – 21:00  •  Sat – Sun: 9:00 – 17:00"
+      />
+      <Enquiry
+        image={check}
+        title="Quality Guarantee"
+        subtext="Verified Purchase Reviews"
+      />
     </Grid>
   );
 };
@@ -226,7 +140,17 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -247,7 +171,17 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -268,7 +202,17 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -289,7 +233,17 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -310,7 +264,17 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -331,7 +295,17 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -352,7 +326,17 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -373,7 +357,17 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -394,7 +388,110 @@ const PopularShirts = () => {
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
-              <img src={Background2} />
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
+              <Flex
+                stack={true}
+                className="card"
+                spacing={16}
+                style={{ border: "2px solid #EAEAEC" }}
+              >
+                <p className="secondary">Manchester United 21-22</p>
+                <Flex spacing={8}>
+                  <p className="bold secondary">€30.00</p>
+                  <Flex className="" ai="center">
+                    <p className="discount">€89.95</p>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Link>
+        <Link to="/product" style={{ textDecoration: "none" }}>
+          <Flex spacing={32} className="" style={{ width: "100%" }}>
+            <Flex stack={true} className="">
+              <Flex style={{ position: "relative" }}>
+                <img
+                  src={Background2}
+                  // style={{ height: "100%", width: "100%" }}
+                />
+                <Tag
+                  style={{ position: "absolute", bottom: "16px", left: "16px" }}
+                  text="Save 67%"
+                ></Tag>
+              </Flex>
+
               <Flex
                 stack={true}
                 className="card"
@@ -417,54 +514,46 @@ const PopularShirts = () => {
   );
 };
 
-const CountryLeagues = () => {
+const CountryLeague = (props) => {
+  return (
+    <Flex stack={true}>
+      <div className="">
+        <img src={props.image} style={{ width: "100%" }} />
+      </div>
+      <div className="">
+        <p className="bold medium">{props.text}</p>
+      </div>
+    </Flex>
+  );
+};
+
+const CountryLeagueRow = () => {
   return (
     <Flex className="country-leagues " spacing={80} stack={true}>
       <div className="">
         <h2>COUNTRY LEAGUES</h2>
       </div>
-      <Flex className="country-league-img" spacing={16}>
-        <Flex stack={true} spacing={16} style={{ flexBasis: "20%" }}>
-          <div className="country-league-column">
-            <img src={Background3} style={{ width: "100%" }} />
-          </div>
-          <div>
-            <p className="bold">Champions League</p>
-          </div>
-        </Flex>
-        <Flex stack={true} spacing={16} style={{ flexBasis: "20%" }}>
-          <div>
-            <img src={Background4} style={{ width: "100%" }} />
-          </div>
-          <div>
-            <p className="bold">Europa League</p>
-          </div>
-        </Flex>
-        <Flex stack={true} spacing={16} style={{ flexBasis: "20%" }}>
-          <div>
-            <img src={Background5} style={{ width: "100%" }} />
-          </div>
-          <div>
-            <p className="bold">Copa America</p>
-          </div>
-        </Flex>
-        <Flex stack={true} spacing={16} style={{ flexBasis: "20%" }}>
-          <div>
-            <img src={Background6} style={{ width: "100%" }} />
-          </div>
-          <div>
-            <p className="bold">Asian Cup</p>
-          </div>
-        </Flex>
-        <Flex stack={true} spacing={16} style={{ flexBasis: "20%" }}>
-          <div>
-            <img src={Background7} style={{ width: "100%" }} />
-          </div>
-          <div>
-            <p className="bold">African Nations Cup</p>
-          </div>
-        </Flex>
-      </Flex>
+
+      <div className="country-league-row ">
+        <div className="">
+          <CountryLeague text={"Champions League"} image={Background3} />
+        </div>
+        <div className="">
+          <CountryLeague text={"Europa League"} image={Background4} />
+        </div>
+        <div className="">
+          <CountryLeague text={"Copa America"} image={Background5} />
+        </div>
+        <div className="">
+          <CountryLeague text={"Asian Cup"} image={Background6} />
+        </div>
+        <div className="">
+          <CountryLeague text={"African Nations Cup"} image={Background7} />
+        </div>
+        {/* <div className="">
+          <CountryLeague text={"Champions League"} image={Background3} />
+        </div> */}
+      </div>
     </Flex>
   );
 };
@@ -560,7 +649,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Larger Sizes</p>
+              <p className="white bold small">Large </p>
             </Button>
           </div>
         </GridItem>
@@ -605,7 +694,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Goalkeeper</p>
+              <p className="white bold small">Goal</p>
             </Button>
           </div>
         </GridItem>
@@ -650,7 +739,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Authentic/Pro Player</p>
+              <p className="white bold small">Auth</p>
             </Button>
           </div>
         </GridItem>
@@ -769,7 +858,7 @@ const Advertisment = () => {
             <Flex
               stack={true}
               spacing={24}
-              className="white"
+              className="white "
               jc="flex-end"
               style={{ position: "absolute", bottom: "40px", left: "40px" }}
             >
@@ -932,7 +1021,7 @@ const MainPage = () => {
           <RewardTag />
         </Flex>
         <PopularShirts />
-        <CountryLeagues />
+        <CountryLeagueRow />
         <OtherCollections />
         <Advertisment />
       </Flex>

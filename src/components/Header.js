@@ -26,15 +26,12 @@ const TextAndIcon = (props) => {
 const SalesBanner = () => {
   return (
     <Grid className="bg-secondary" gap="0px">
-      <GridItem span={1} md={2} sm={3} className="bg-dark-gray">
-        <Flex stack={true} style={{ width: "100%" }} jc="center" ai="center">
-          {/* <p className="white small">EN</p> */}
-          <TextAndIcon textClassName="white small regular">
-            <Flex spacing={6}>
-              <img src={globe} /> EN <img src={down} />
-            </Flex>
-          </TextAndIcon>
-        </Flex>
+      <GridItem span={1} md={2} sm={3} className="bg-dark-gray centered">
+        <TextAndIcon textClassName="white small regular">
+          <Flex spacing={6}>
+            <img src={globe} /> EN <img src={down} />
+          </Flex>
+        </TextAndIcon>
       </GridItem>
 
       <GridItem
@@ -56,28 +53,15 @@ const SalesBanner = () => {
         </Flex>
       </GridItem>
 
-      <GridItem className="bg-success" span={2} md={2} sm={3}>
-        <Flex jc="center" ai="center">
-          <TextAndIcon textClassName="white small">
-            <Flex spacing={8} ai="center">
-              <img src={whatsapp} />
-              Chat with us
-            </Flex>
-          </TextAndIcon>
-        </Flex>
+      <GridItem className="bg-success centered" span={2} md={2} sm={3}>
+        <TextAndIcon textClassName="white small">
+          <Flex spacing={8} ai="center">
+            <img src={whatsapp} height="8px" width="8px" />
+            Chat with us
+          </Flex>
+        </TextAndIcon>
       </GridItem>
     </Grid>
-    // <Grid span={12} gap="0px">
-    //   <GridItem span={1} className="">
-    //     a
-    //   </GridItem>
-    //   <GridItem span={10} className="">
-    //     a
-    //   </GridItem>
-    //   <GridItem span={1} className="">
-    //     a
-    //   </GridItem>
-    // </Grid>
   );
 };
 

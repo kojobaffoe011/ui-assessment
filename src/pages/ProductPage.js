@@ -29,34 +29,64 @@ const RewardTag = () => {
 
 const ProductGallery = () => {
   return (
-    <Flex
-      spacing={16}
-      stack={true}
-      className="product-gallery "
-      style={{ height: "100%" }}
-    >
-      <div className="selected-img " style={{ flexBasis: "90%" }}>
-        <img style={{ height: "100%" }} src={Background} alt="product" />
+    <Flex stack spacing={8} style={{ height: "100%" }} className="">
+      <div style={{ flexBasis: "90%" }} className="">
+        <img
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          src={Background}
+          alt="product"
+        />
       </div>
 
-      <div className="small-image-row flex-grow " style={{ marginTop: "auto" }}>
-        <div className="small-image-column">
-          <img src={Background} alt="product-gallery" />
-        </div>
-        <div className="small-image-column">
-          <img className="faded" src={Background} alt="product-gallery" />
-        </div>
-        <div className="small-image-column">
-          <img className="faded" src={Background} alt="product-gallery" />
-        </div>
-        <div className="small-image-column">
-          <img className="faded" src={Background} alt="product-gallery" />
-        </div>
-        <div className="small-image-column">
-          <img className="faded" src={Background} alt="product-gallery" />
-        </div>
-        <div className="small-image-column">
-          <img className="faded" src={Background} alt="product-gallery" />
+      <div style={{ marginTop: "auto" }}>
+        <div className="small-image-row">
+          <div className="small-image-column">
+            <img
+              src={Background}
+              style={{ width: "100%" }}
+              alt="product-gallery"
+            />
+          </div>
+          <div className="small-image-column">
+            <img
+              className="faded"
+              style={{ width: "100%" }}
+              src={Background}
+              alt="product-gallery"
+            />
+          </div>
+          <div className="small-image-column">
+            <img
+              className="faded"
+              style={{ width: "100%" }}
+              src={Background}
+              alt="product-gallery"
+            />
+          </div>
+          <div className="small-image-column">
+            <img
+              className="faded"
+              style={{ width: "100%" }}
+              src={Background}
+              alt="product-gallery"
+            />
+          </div>
+          <div className="small-image-column">
+            <img
+              className="faded"
+              style={{ width: "100%" }}
+              src={Background}
+              alt="product-gallery"
+            />
+          </div>
+          <div className="small-image-column">
+            <img
+              className="faded"
+              style={{ width: "100%" }}
+              src={Background}
+              alt="product-gallery"
+            />
+          </div>
         </div>
       </div>
     </Flex>
@@ -66,7 +96,7 @@ const ProductGallery = () => {
 const ProductDetails = () => {
   return (
     <Flex stack={true} className="product-details  ">
-      <Flex spacing={48} stack={true}>
+      <Flex spacing={28} stack={true}>
         <Flex stack={true} spacing={16} className="">
           <div className="product-title">
             <h2 className="bold" style={{ fontSize: "24px" }}>
@@ -103,7 +133,10 @@ const ProductDetails = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque euismod lacinia aliquam. Morbi est nis, at lacus. Donec
             ornare, dui vel facilisis luctus, metus mi ttitor erat sapien
-            scelerisque nunc. Pellentesque ornare elit tellus... Read More
+            scelerisque nunc. Pellentesque ornare elit tellus...
+            <span style={{ textDecoration: "underline" }} className="bold">
+              Read More
+            </span>
           </p>
         </Flex>
       </Flex>
@@ -201,7 +234,7 @@ const ProductForm = () => {
 const ProductPage = () => {
   return (
     <Flex stack={true} spacing={20} className="">
-      <Flex stack={true} spacing={40} className="product-preview ">
+      <Flex stack={true} spacing={20} className="product-preview ">
         <div
           className="product-map"
           className=""
@@ -214,18 +247,14 @@ const ProductPage = () => {
           </p>
         </div>
 
-        <Grid span={12} className="product-preview-grid " gap="80px">
-          <GridItem className="product-preview-grid-child " span={6} md={12}>
-            <ProductGallery />
-          </GridItem>
+        <div span={12} className="product-preview-grid" gap="80px">
+          <ProductGallery />
 
-          <GridItem className="product-preview-grid-child   " span={6} md={12}>
-            <Flex stack={true} style={{ height: "100%" }} spacing={40}>
-              <ProductDetails />
-              <ProductForm />
-            </Flex>
-          </GridItem>
-        </Grid>
+          <Flex stack={true} style={{ height: "100%" }} spacing={20}>
+            <ProductDetails />
+            <ProductForm />
+          </Flex>
+        </div>
       </Flex>
 
       <Flex>
