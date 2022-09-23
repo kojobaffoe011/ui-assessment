@@ -30,6 +30,10 @@
   height: 100%;
 } */
 
+.product-price {
+  font-size: 40px;
+}
+
 .selected-img > img {
   width: 100%;
   object-fit: cover;
@@ -88,9 +92,13 @@
   }
 
   .product-map {
-    width: 100%;
+    width: 50%;
+    height: 20vh;
   }
 
+  .product-price {
+    font-size: 32px;
+  }
   .map-padding {
     padding-left: 8px;
     padding-top: 16px;

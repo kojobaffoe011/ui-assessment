@@ -12,6 +12,15 @@
   align-items: center;
 }
 
+.cart-select:hover {
+  text-decoration: underline #f9dc38;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
+/* p:hover {
+  text-decoration: underline #f9dc38;
+} */
+
 @media screen and (max-width: 768px) {
   .category-header {
     display: none !important;

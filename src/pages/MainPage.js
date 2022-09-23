@@ -604,7 +604,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Kids</p>
+              <p className="white bold other-text">Kids</p>
             </Button>
           </div>
         </GridItem>
@@ -649,7 +649,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Large </p>
+              <p className="white bold other-text-alt">Large Sizes </p>
             </Button>
           </div>
         </GridItem>
@@ -694,7 +694,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Goal</p>
+              <p className="white bold other-text-alt">Goalkeeper</p>
             </Button>
           </div>
         </GridItem>
@@ -739,7 +739,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Auth</p>
+              <p className="white bold other-text">Authentic</p>
             </Button>
           </div>
         </GridItem>
@@ -784,7 +784,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Shorts</p>
+              <p className="white bold other-text">Shorts</p>
             </Button>
           </div>
         </GridItem>
@@ -829,7 +829,7 @@ const OtherCollections = () => {
                 </Flex>
               }
             >
-              <p className="white bold small">Socks</p>
+              <p className="white bold other-text">Socks</p>
             </Button>
           </div>
         </GridItem>
@@ -858,12 +858,12 @@ const Advertisment = () => {
             <Flex
               stack={true}
               spacing={24}
-              className="white "
+              className="white advert-position"
               jc="flex-end"
-              style={{ position: "absolute", bottom: "40px", left: "40px" }}
+              // style={{ position: "absolute", bottom: "40px", left: "40px" }}
             >
-              <h3>PERSONALIZATION</h3>
-              <p>
+              <h3 className="advert-heading">PERSONALIZATION</h3>
+              <p className="other-text-alte">
                 Put a custom print on the football shirt of your choice with our
                 Personalization service. <br /> <br />
                 Tell us what name, what number and we put it. FREE!!!
@@ -891,8 +891,8 @@ const Advertisment = () => {
             jc="flex-end"
             style={{ position: "absolute", bottom: "40px", left: "40px" }}
           >
-            <h3>SOCIAL NETWORKS</h3>
-            <p>
+            <h3 className="advert-heading">SOCIAL NETWORKS</h3>
+            <p className="other-text-alte">
               Share your shirts with us with the #CamisetasFutbolSpainnn <br />{" "}
             </p>
             <Flex spacing="8px">

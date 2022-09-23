@@ -144,6 +144,11 @@ h3 {
   line-height: 16px;
 }
 
+.smallest-alt {
+  font-size: 8px;
+  line-height: 16px;
+}
+
 .too-small {
   font-size: 8.5px;
   line-height: 16px;

@@ -10,6 +10,7 @@ import user from "../assets/icons/svg/user.svg";
 import down from "../assets/icons/svg/down.svg";
 import whatsapp from "../assets/icons/svg/whatsapp.svg";
 import { Link } from "react-router-dom";
+// import down1 from "../assets/icons/svg/Polygon-4.svg";
 // import down2 from "../assets/icons/svg/down-alt.svg";
 import globe from "../assets/icons/svg/globe.svg";
 import "../styles/header.css";
@@ -152,7 +153,11 @@ const AppHeader = () => {
               ai="center"
               // stack={true}
               className=""
-              style={{ height: "40px", paddingLeft: "16px" }}
+              style={{
+                height: "40px",
+                paddingLeft: "16px",
+                // paddingTop: "28px",
+              }}
             >
               <div>
                 <img src={ham} />
@@ -205,29 +210,29 @@ const CategoryHeader = () => {
       <GridItem span={11}>
         <Flex className="category-header-content  flex-grow">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <TextAndIcon textClassName="gray">Home</TextAndIcon>
+            <TextAndIcon textClassName="gray cart-select">Home</TextAndIcon>
           </Link>
 
-          <TextAndIcon textClassName="gray">
+          <TextAndIcon textClassName="gray cart-select">
             <Flex spacing={8}>
               T-Shirts <img src={down} />
             </Flex>
           </TextAndIcon>
-          <TextAndIcon textClassName="gray">
+          <TextAndIcon textClassName="gray cart-select">
             <Flex spacing={8}>
               NBA <img src={down} />
             </Flex>
           </TextAndIcon>
-          <TextAndIcon textClassName="gray">
+          <TextAndIcon textClassName="gray cart-select">
             <Flex spacing={8}>
               Tracksuits <img src={down} />
             </Flex>
           </TextAndIcon>
-          <TextAndIcon textClassName="gray">
+          <TextAndIcon textClassName="gray cart-select">
             Products Delivery • 1 - 2 days
           </TextAndIcon>
-          <TextAndIcon textClassName="gray">Contact</TextAndIcon>
-          <TextAndIcon textClassName="gray">Reviews</TextAndIcon>
+          <TextAndIcon textClassName="gray cart-select">Contact</TextAndIcon>
+          <TextAndIcon textClassName="gray cart-select">Reviews</TextAndIcon>
         </Flex>
       </GridItem>
     </Grid>
