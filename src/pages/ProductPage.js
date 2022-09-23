@@ -95,7 +95,7 @@ const ProductGallery = () => {
 
 const ProductDetails = () => {
   return (
-    <Flex stack={true} className="product-details  ">
+    <Flex stack={true} className="product-details">
       <Flex spacing={28} stack={true}>
         <Flex stack={true} spacing={16} className="">
           <div className="product-title">
@@ -104,10 +104,7 @@ const ProductDetails = () => {
             </h2>
           </div>
           <Flex stack={true} spacing={48} className="">
-            <Flex
-              className=""
-              // style={{ position: "relative" }}
-            >
+            <Flex className="">
               <Flex
                 className="product-info flex-grow "
                 jc="space-between"
@@ -175,7 +172,7 @@ const ProductForm = () => {
   return (
     <Flex stack={true} spacing={16} className="product-form  ">
       <Flex stack={true} spacing={60}>
-        <Flex stack={true} spacing={40}>
+        <Flex stack={true} spacing={40} jc="flex-start">
           <Flex stack={true} spacing={16}>
             <ProductFormPart label={"Size"}>
               <Flex spacing={10} className="flex-grow">
@@ -217,7 +214,7 @@ const ProductForm = () => {
           </Flex>
         </Flex>
         <Button
-          marginTop={"auto"}
+          // marginTop={"auto"}
           padding="18px 12px"
           backgroundColor="#F9DC38"
           append={
@@ -266,7 +263,12 @@ const ProductPage = () => {
 
         <div span={12} className="product-preview-grid ">
           <ProductGallery />
-          <Flex stack={true} spacing={40}>
+          <Flex
+            stack={true}
+            spacing={80}
+            className=""
+            style={{ height: "100%" }}
+          >
             <ProductDetails />
             <ProductForm />
           </Flex>

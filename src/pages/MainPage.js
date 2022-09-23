@@ -91,12 +91,17 @@ const Enquiries = () => {
 };
 
 const PopularShirts = () => {
+  const scrollElement = useRef(null);
+  const scrollLeft = () => {
+    scrollElement.current.scrollLeft = +20;
+  };
   return (
     <Flex className=" popular-shirts" spacing={80} stack={true}>
       <Flex className="">
         <h2 style={{ flexBasis: "90%" }}>MOST POPULAR T-SHIRTS</h2>
         <Flex className="flex-grow  " jc="flex-end" spacing={8}>
           <Flex
+            onClick={scrollLeft}
             className=""
             jc="center"
             style={{
@@ -136,7 +141,12 @@ const PopularShirts = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex spacing={32} className="" style={{ overflowX: "scroll" }}>
+      <Flex
+        spacing={32}
+        className=""
+        style={{ overflowX: "scroll" }}
+        ref={scrollElement}
+      >
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
@@ -203,10 +213,7 @@ const PopularShirts = () => {
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <Flex style={{ position: "relative" }}>
-                <img
-                  src={Background2}
-                  // style={{ height: "100%", width: "100%" }}
-                />
+                <img src={Background2} />
                 <Tag
                   style={{ position: "absolute", bottom: "16px", left: "16px" }}
                   text="Save 67%"
