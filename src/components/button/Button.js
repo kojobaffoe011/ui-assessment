@@ -18,6 +18,7 @@ const Button = (props) => {
           jc={props.jc || "flex-start"}
           ai={props.ai || "center"}
           className="flex-grow bold small"
+          // onClick={() => console.log("hey")}
           style={{
             padding: props.padding || "8px 16px",
             backgroundColor: props.backgroundColor || "initial",

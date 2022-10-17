@@ -10,8 +10,6 @@ import user from "../assets/icons/svg/user.svg";
 import down from "../assets/icons/svg/down.svg";
 import whatsapp from "../assets/icons/svg/whatsapp.svg";
 import { Link } from "react-router-dom";
-// import down1 from "../assets/icons/svg/Polygon-4.svg";
-// import down2 from "../assets/icons/svg/down-alt.svg";
 import globe from "../assets/icons/svg/globe.svg";
 import "../styles/header.css";
 
@@ -58,10 +56,7 @@ const SalesBanner = () => {
       <GridItem className="bg-success centered" span={2} md={2} sm={3}>
         <TextAndIcon textClassName="white small">
           <Flex spacing={8} ai="center">
-            <img
-              src={whatsapp}
-              //  height="8px" width="8px"
-            />
+            <img src={whatsapp} />
             Chat with us
           </Flex>
         </TextAndIcon>

@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "../styles/landing-page.css";
 import Flex from "../components/layout/Flex";
-// import Tag from "../components/others/Tag";
 import Background from "../assets/images/hero.jpg";
 import Background1 from "../assets/images/reward-tag.svg";
 import Background2 from "../assets/images/product-medium.jpg";
@@ -72,36 +71,61 @@ const Enquiry = (props) => {
 };
 
 const Enquiries = () => {
+  const enquiries = [
+    {
+      image: truck,
+      title: "Secure Shipping",
+      subtext: "on all orders",
+    },
+    {
+      image: phone,
+      title: "Telephone",
+      subtext: "+1 23 456 7890",
+    },
+    {
+      image: whatsapp,
+      title: "Chat Whatsapp",
+      subtext: "Mon – Fri: 9:00 – 21:00  •  Sat – Sun: 9:00 – 17:00",
+    },
+    {
+      image: check,
+      title: "Quality Guarantee",
+      subtext: "Verified Purchase Reviews",
+    },
+  ];
+
   return (
     <Grid span={12} gap="8px" className="enquiries ">
-      <Enquiry image={truck} title="Secure Shipping" subtext="on all orders" />
-      <Enquiry image={phone} title="Telephone" subtext="+1 23 456 7890" />
-      <Enquiry
-        image={whatsapp}
-        title="Chat Whatsapp"
-        subtext="Mon – Fri: 9:00 – 21:00  •  Sat – Sun: 9:00 – 17:00"
-      />
-      <Enquiry
-        image={check}
-        title="Quality Guarantee"
-        subtext="Verified Purchase Reviews"
-      />
+      {enquiries.map((enquiry, index) => {
+        return (
+          <Enquiry
+            key={index}
+            image={enquiry.image}
+            title={enquiry.title}
+            subtext={enquiry.subtext}
+          />
+        );
+      })}
     </Grid>
   );
 };
 
 const PopularShirts = () => {
-  const scrollElement = useRef(null);
-  const scrollLeft = () => {
-    scrollElement.current.scrollLeft = +20;
-  };
+  const shirts = [
+    {
+      image: Background2,
+      name: "Manchester United 21-22",
+      price: "€30.00",
+      discount: "€89.95",
+    },
+  ];
+
   return (
     <Flex className=" popular-shirts" spacing={80} stack={true}>
       <Flex className="">
         <h2 style={{ flexBasis: "90%" }}>MOST POPULAR T-SHIRTS</h2>
         <Flex className="flex-grow  " jc="flex-end" spacing={8}>
           <Flex
-            onClick={scrollLeft}
             className=""
             jc="center"
             style={{
@@ -141,20 +165,49 @@ const PopularShirts = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex
-        spacing={32}
-        className=""
-        style={{ overflowX: "scroll" }}
-        ref={scrollElement}
-      >
+      <Flex spacing={32} className="" style={{ overflowX: "scroll" }}>
+        {/* {PrintShirts()} */}
+        {shirts.map((shirt) => {
+          return (
+            <Link to="/product" style={{ textDecoration: "none" }}>
+              <Flex spacing={32} className="" style={{ width: "100%" }}>
+                <Flex stack={true} className="">
+                  <Flex style={{ position: "relative" }}>
+                    <img src={shirt.image} />
+                    <Tag
+                      style={{
+                        position: "absolute",
+                        bottom: "16px",
+                        left: "16px",
+                      }}
+                      text="Save 67%"
+                    ></Tag>
+                  </Flex>
+
+                  <Flex
+                    stack={true}
+                    className="card"
+                    spacing={16}
+                    style={{ border: "2px solid #EAEAEC" }}
+                  >
+                    <p className="secondary">{shirt.name}</p>
+                    <Flex spacing={8}>
+                      <p className="bold secondary">{shirt.price}</p>
+                      <Flex className="" ai="center">
+                        <p className="discount">{shirt.discount}</p>
+                      </Flex>
+                    </Flex>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Link>
+          );
+        })}
         <Link to="/product" style={{ textDecoration: "none" }}>
           <Flex spacing={32} className="" style={{ width: "100%" }}>
             <Flex stack={true} className="">
               <Flex style={{ position: "relative" }}>
-                <img
-                  src={Background2}
-                  // style={{ height: "100%", width: "100%" }}
-                />
+                <img src={Background2} />
                 <Tag
                   style={{ position: "absolute", bottom: "16px", left: "16px" }}
                   text="Save 67%"
@@ -535,6 +588,29 @@ const CountryLeague = (props) => {
 };
 
 const CountryLeagueRow = () => {
+  const leagues = [
+    {
+      text: "Champions League",
+      image: Background3,
+    },
+    {
+      text: "Europa League",
+      image: Background4,
+    },
+    {
+      text: "Copa America",
+      image: Background5,
+    },
+    {
+      text: "Asian Cup",
+      image: Background6,
+    },
+    {
+      text: "African Nations Cup",
+      image: Background7,
+    },
+  ];
+
   return (
     <Flex className="country-leagues " spacing={80} stack={true}>
       <div className="">
@@ -542,24 +618,13 @@ const CountryLeagueRow = () => {
       </div>
 
       <div className="country-league-row ">
-        <div className="">
-          <CountryLeague text={"Champions League"} image={Background3} />
-        </div>
-        <div className="">
-          <CountryLeague text={"Europa League"} image={Background4} />
-        </div>
-        <div className="">
-          <CountryLeague text={"Copa America"} image={Background5} />
-        </div>
-        <div className="">
-          <CountryLeague text={"Asian Cup"} image={Background6} />
-        </div>
-        <div className="">
-          <CountryLeague text={"African Nations Cup"} image={Background7} />
-        </div>
-        {/* <div className="">
-          <CountryLeague text={"Champions League"} image={Background3} />
-        </div> */}
+        {leagues.map((league) => {
+          return (
+            <div className="">
+              <CountryLeague text={league.text} image={league.image} />
+            </div>
+          );
+        })}
       </div>
     </Flex>
   );
@@ -946,6 +1011,7 @@ const Advertisment = () => {
           </Flex>
         </GridItem>
       </Grid>
+      {/* <button onClick={() => console.log("hey")}>a</button> */}
     </Flex>
   );
 };
@@ -986,6 +1052,7 @@ const LandingBanner = () => {
             <Button
               backgroundColor={"transparent"}
               border="1px solid white"
+              // onClick={() => console.log("hey")}
               append={
                 <Flex
                   className="bg-white"
